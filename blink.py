@@ -6,11 +6,10 @@ GPIO.setup(18, GPIO.OUT)
 n = 1
 
 while (True):
+    n = int(input("Введите число миганий: "))
     for i in range(n):
          GPIO.output(18, True)
          time.sleep(0.1)
          GPIO.output(18, False)
          time.sleep(0.2)
     time.sleep(0.3)
-    n = n + 1 
-
